@@ -12,7 +12,6 @@ router.post('/', (req, res) => {
         title: req.body.title,
         description: req.body.description
     });
-
     post.save()
     .then(data => {
         res.json(data);
